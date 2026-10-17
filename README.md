@@ -2,8 +2,7 @@
 
 **Explore gym membership plans and find the right fitness package for your goals.**
 
-🔗 **Live Demo:** https://gympricing-hub.surge.sh/
-
+🔗 **Live Demo:** https://gym-plans.surge.sh/
 
 
 
@@ -20,6 +19,8 @@ Navbar > Navbar.jsx , Link.jsx
 PricingOptions > PricingOptions.jsx
 
 PricingCard > PricingCard.jsx
+
+ResultsChart > ResultsChart.jsx
 
 
 ```
@@ -72,6 +73,9 @@ To confirm lucide installed : package.json
     "tailwindcss": "^4.3.3"
   },
 ```
+
+Recharts :
+npm install recharts
 
 
 
@@ -185,14 +189,28 @@ const [open, setOpen] = useState(false)
         setOpen(!open)
     }
 
-<span className='flex gap-2 items-center'>
-     // <span onClick={() => handleMenuBar(setOpen(!open))}
-            <span onClick={() => handleMenuBar()}
-                className='md:hidden'>
-                    {open ? <Menu></Menu> : <X></X>}
-            </span>
-            <h3 className=' text-xl font-bold'>Fitness</h3>
-        </span>
+<span className="flex gap-2 items-center">
+    {/* Part-i */}
+    <span
+        onClick={() => handleMenuBar()}
+        className="md:hidden"
+    >
+        {open ? <X /> : <Menu />}
+
+        <ul
+            className={`md:hidden absolute duration-1000
+                ${open ? "top-12" : "-top-50"}
+                bg-blue-200 text-black`}
+        >
+            {links}
+        </ul>
+    </span>
+
+    {/* Part-ii */}
+    <h3 className="text-2xl font-bold">
+        Gym<span className="text-orange-400">Plans</span>
+    </h3>
+</span>
 ```
 
 
@@ -275,8 +293,7 @@ const PricingFeatures = ({ feature }) => {
 
 
 
-
-
+### Rechart use
 
 
 
