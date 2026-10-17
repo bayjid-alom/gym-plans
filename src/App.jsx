@@ -3,6 +3,7 @@ import './App.css'
 import DaisyNav from './components/DaisyNav/DaisyNav'
 import Navbar from './components/Navbar/Navbar'
 import PricingOptions from './PricingOptions/PricingOptions'
+import Banner from './components/Banner/Banner'
 
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json())
@@ -19,6 +20,8 @@ function App() {
         <Navbar></Navbar>
       </header>
 
+      <Banner></Banner>
+
 
       <main>
 
@@ -26,7 +29,7 @@ function App() {
           <div className='flex justify-center mx-auto py-10'>
             <span className="loading loading-dots loading-3xl text-white"></span>
           </div>}>
-          
+
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
       </main>

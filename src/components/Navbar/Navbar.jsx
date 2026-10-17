@@ -5,12 +5,11 @@ import { Menu, X } from 'lucide-react';
 
 const navItems = [
     { id: 1, name: "Home", path: "/" },
-    { id: 2, name: "About", path: "/about" },
-    { id: 3, name: "Services", path: "/services" },
-    { id: 4, name: "Projects", path: "/projects" },
-    { id: 5, name: "Contact", path: "/contact" }
+    { id: 2, name: "Membership", path: "/membership" },
+    { id: 3, name: "Trainers", path: "/trainers" },
+    { id: 4, name: "Facilities", path: "/facilities" },
+    { id: 5, name: "Pricing", path: "/pricing" }
 ];
-
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -31,8 +30,8 @@ const Navbar = () => {
                         className='md:hidden'>
                         {
                             open ?
-                            <X className='md:hidden'></X> :
-                            <Menu className='md:hidden'></Menu> 
+                                <X className='md:hidden'></X> :
+                                <Menu className='md:hidden'></Menu>
                         }
 
                         <ul className={`md:hidden absolute duration-1000
@@ -46,7 +45,7 @@ const Navbar = () => {
                     </span>
 
                     {/* Part-ii */}
-                    <h3 className=' text-xl font-bold'>Gym<span className='text-orange-300'>Plans</span></h3>
+                    <h3 className=' text-2xl font-bold'>Gym<span className='text-orange-400'>Plans</span></h3>
                 </span>
 
 
@@ -58,7 +57,7 @@ const Navbar = () => {
                 </ul>
 
 
-                <button className='btn btn-soft'>Sign In</button>
+                <button className='btn btn-soft'>Get Started</button>
 
 
 

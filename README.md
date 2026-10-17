@@ -1,4 +1,4 @@
-## 🏋️ GymPricing
+## 🏋️ GymPlans
 
 **Explore gym membership plans and find the right fitness package for your goals.**
 
