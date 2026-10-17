@@ -8,6 +8,7 @@ import ResultsChart from './components/ResultsChart/ResultsChart'
 import GymPieChart from './components/ResultsChart/GymPieChart'
 import axios from 'axios'
 import GymChart from './components/GymChartAxios/GymChart'
+import Footer from './components/Footer/Footer'
 
 
 // normally
@@ -57,6 +58,10 @@ function App() {
 
         <GymChart gymDataPromise={gymDataPromise}></GymChart>
       </Suspense>
+
+
+
+      <Footer></Footer>
 
 
     </>
