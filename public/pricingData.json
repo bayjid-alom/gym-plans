@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Basic",
+        "price": "$9.99/month",
+        "features": [
+            "Access to gym equipment",
+            "Basic workout plan",
+            "Locker room access",
+            "Group workout sessions"
+        ],
+        "unavailableFeatures": [
+            "Personal trainer support",
+            "Diet and nutrition plan"
+        ],
+        "popular": false,
+        "buttonText": "Get Started"
+    },
+    {
+        "id": 2,
+        "name": "Premium",
+        "price": "$19.99/month",
+        "features": [
+            "Full access to gym equipment",
+            "Personal trainer support",
+            "Custom workout plan",
+            "Group fitness classes",
+            "Locker room access",
+            "Diet and nutrition guidance"
+        ],
+        "unavailableFeatures": [
+            "24/7 gym access"
+        ],
+        "popular": true,
+        "buttonText": "Join Now"
+    },
+    {
+        "id": 3,
+        "name": "Elite",
+        "price": "$29.99/month",
+        "features": [
+            "Unlimited gym access",
+            "Dedicated personal trainer",
+            "Advanced workout plan",
+            "All group fitness classes",
+            "Premium locker access",
+            "Personalized nutrition plan",
+            "24/7 gym access"
+        ],
+        "unavailableFeatures": [],
+        "popular": false,
+        "buttonText": "Go Elite"
+    }
+]

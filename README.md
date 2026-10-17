@@ -1,8 +1,31 @@
-## React Pricing Gym
+## 🏋️ GymPricing
 
-live : 
+**Explore gym membership plans and find the right fitness package for your goals.**
 
-gympricing-hub.surge.sh
+🔗 **Live Demo:** https://gympricing-hub.surge.sh/
+
+
+
+
+
+## Structure
+
+```
+src > component >
+
+DaisyNav> DaisyNav.jsx
+
+Navbar > Navbar.jsx , Link.jsx
+
+PricingOptions > PricingOptions.jsx
+
+PricingCard > PricingCard.jsx
+
+
+```
+
+
+
 
 ### Flow
 
@@ -171,3 +194,90 @@ const [open, setOpen] = useState(false)
             <h3 className=' text-xl font-bold'>Fitness</h3>
         </span>
 ```
+
+
+
+### to make pricing card
+- genaate array of object json foramto
+- in public foler >> pricingData.json >> paste
+
+- spinner fallback
+
+-  pricingData.json kivabe niye asbo App.jsx e ?
+
+```
+const pricingPromise = fetch('pricingData.json').then(res => res.json())
+
+<Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+        <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
+</Suspense>
+
+
+const PricingOptions = ({ pricingPromise }) => {}
+```
+
+
+
+###  Features card er width subcribe button porjonto soman korte cahile:
+
+```
+<div className='features flex-1'>
+    {
+     features.map((feature, index) => <p key={index}>{feature}</p>)
+    }
+</div>
+```
+
+or, 
+```
+<div className='features flex-1'>
+                    {
+                        features.map((feature, index) => <PricingFeatures
+                            key={index}
+                            feature={feature}></PricingFeatures>)
+                    }
+                </div>
+```
+
+
+### to use check icon
+
+
+```
+const PricingFeatures = ({ feature }) => {
+    return (
+        <p className='flex'>
+            <Check className='w-[15px] mr-2 text-green-400'></Check> {feature}
+        </p>
+    );
+};
+```
+
+
+
+### Li customize
+
+```
+<ul className="flex-1 mt-6 flex flex-col gap-2 text-xs">
+    {
+        features.map((feature, index) =>
+            <li key={index}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                <span>{feature}</span>
+            </li>)
+    }
+</ul>
+
+
+{/* <span className="badge badge-xs badge-warning"></span> */}
+{popular && <span className="badge badge-xs badge-warning">Most Popular</span>}
+```
+
+
+
+
+
+
+
+
+

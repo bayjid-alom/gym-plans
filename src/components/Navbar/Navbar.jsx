@@ -46,7 +46,7 @@ const Navbar = () => {
                     </span>
 
                     {/* Part-ii */}
-                    <h3 className=' text-xl font-bold'>Fitness</h3>
+                    <h3 className=' text-xl font-bold'>Gym<span className='text-orange-300'>Plans</span></h3>
                 </span>
 
 
