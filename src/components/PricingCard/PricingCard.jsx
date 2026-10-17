@@ -6,7 +6,7 @@ const PricingCard = ({ pricing }) => {
     // console.log(name, price, features); 
 
     return (
-        <div className="card md:w-88 w-full bg-base-100  shadow-sm mx-auto transition-all 
+        <div className="card md:w-88 w-full bg-base-100 shadow-sm mx-auto transition-all 
         border border-gray-700/100 hover:border-gray-500 duration-300 hover:-translate-y-2">
             <div className="card-body">
 

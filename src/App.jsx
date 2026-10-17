@@ -6,17 +6,22 @@ import PricingOptions from './PricingOptions/PricingOptions'
 import Banner from './components/Banner/Banner'
 import ResultsChart from './components/ResultsChart/ResultsChart'
 import GymPieChart from './components/ResultsChart/GymPieChart'
+import axios from 'axios'
+import GymChart from './components/GymChartAxios/GymChart'
 
 
+// normally
 const pricingPromise = fetch('pricingData.json').then(res => res.json())
+
+// Fetch gym data using Axios without then()
+const gymDataPromise = axios.get('gymData.json')
+
 
 
 function App() {
 
   return (
     <>
-
-
 
       <header>
         <Navbar></Navbar>
@@ -42,6 +47,16 @@ function App() {
       <GymPieChart></GymPieChart>
 
 
+
+
+      <Suspense fallback={
+        <div className='flex justify-center mx-auto py-10'>
+          <span className="loading loading-dots loading-3xl text-white"></span>
+        </div>}
+      >
+
+        <GymChart gymDataPromise={gymDataPromise}></GymChart>
+      </Suspense>
 
 
     </>

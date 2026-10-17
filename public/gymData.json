@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "age": 25,
+        "plan": "Premium",
+        "duration": "12 Months",
+        "price": 12000,
+        "workout": {
+            "chest": 85,
+            "back": 90,
+            "legs": 80
+        },
+        "city": "New York"
+    },
+    {
+        "id": 2,
+        "name": "Michael",
+        "age": 28,
+        "plan": "Standard",
+        "duration": "6 Months",
+        "price": 7000,
+        "workout": {
+            "chest": 75,
+            "back": 80,
+            "legs": 85
+        },
+        "city": "London"
+    },
+    {
+        "id": 3,
+        "name": "Emma",
+        "age": 23,
+        "plan": "Basic",
+        "duration": "3 Months",
+        "price": 4000,
+        "workout": {
+            "chest": 70,
+            "back": 75,
+            "legs": 90
+        },
+        "city": "Toronto"
+    },
+    {
+        "id": 4,
+        "name": "James",
+        "age": 30,
+        "plan": "Premium",
+        "duration": "12 Months",
+        "price": 12000,
+        "workout": {
+            "chest": 90,
+            "back": 85,
+            "legs": 88
+        },
+        "city": "Sydney"
+    },
+    {
+        "id": 5,
+        "name": "Olivia",
+        "age": 26,
+        "plan": "Standard",
+        "duration": "6 Months",
+        "price": 7000,
+        "workout": {
+            "chest": 80,
+            "back": 88,
+            "legs": 92
+        },
+        "city": "Manchester"
+    },
+    {
+        "id": 6,
+        "name": "William",
+        "age": 24,
+        "plan": "Basic",
+        "duration": "3 Months",
+        "price": 4000,
+        "workout": {
+            "chest": 78,
+            "back": 82,
+            "legs": 75
+        },
+        "city": "Chicago"
+    },
+    {
+        "id": 7,
+        "name": "Sophia",
+        "age": 27,
+        "plan": "Premium",
+        "duration": "12 Months",
+        "price": 12000,
+        "workout": {
+            "chest": 92,
+            "back": 95,
+            "legs": 88
+        },
+        "city": "Melbourne"
+    }
+]

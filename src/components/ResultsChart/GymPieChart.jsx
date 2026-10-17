@@ -20,6 +20,7 @@ const GymPieChart = () => {
                     </h2>
                 </div>
 
+
                 <div className="w-full min-w-0">
                     <ResponsiveContainer width="100%" height={350}>
                         <PieChart>
@@ -33,7 +34,7 @@ const GymPieChart = () => {
                                 fill="#6366f1"
                                 label
                             />
-                            
+
                             <Tooltip
                                 contentStyle={{
                                     backgroundColor: "#1e293b",
